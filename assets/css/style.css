@@ -1,0 +1,256 @@
+/* 
+    Theme: Lucid
+    Author: Borsha Rahman
+    Live URL:
+
+    Primary Color: #008ED6
+    Secondary Color: #fff
+
+    Font Style
+    Title: Source Sans 3
+    Paragraph: Open Sans
+*/
+
+/*  Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Global CSS */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header Section */
+header{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Navber */
+
+.nav-item{
+    padding:0 10px;
+}
+
+.nav-link{
+    color:#fff;
+    position:relative;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding:0 !important;
+}
+
+.nav-link::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    height:3px;
+    width:0%;
+    background:#008ed6;
+    transition:.4s all ease-in-out;
+}
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    right:0;
+    bottom:-5px;
+    height:3px;
+    width:0%;
+    background:#008ed6;
+    transition:.4s all ease-in-out;
+}
+
+.nav-link:hover::before{
+    width:48%;
+}
+
+.nav-link:hover::after{
+    width:48%;
+}
+
+.nav-link:hover{
+    color:#fff;
+}
+
+.content{
+    align-items: center;
+}
+
+.content h4{
+   color: #008ed6;
+   font-weight: 700;
+   font-size: 14px;  
+   text-transform: uppercase;    
+   margin-bottom: 28px;
+}
+
+.content h1{
+   color: #fff;
+   font-size: 48px;
+   margin-bottom: 32px;
+}
+
+.content p{
+   margin: 0;
+   padding: 0;
+   color: #999999;
+   font-weight: 400;
+   font-size: 16px;
+   margin-bottom: 70px;
+}
+
+.btn{
+   color: #fff;
+   text-transform: uppercase;
+   border: 1px solid #999999;
+   padding: 14px 30px;
+   transition:1s all ease-in-out;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.btn:hover{
+    background:#008ed6;
+    color:#fff;
+    border-color:#999999;
+}
+
+.height{
+    min-height: 90vh;
+}
+
+.phone{
+    position:absolute;
+    bottom:0;
+    right: 10%;
+}
+
+/* Feature Section */
+
+.feature-section{
+	padding: 60px 0;
+}
+.tittle{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tittle h5{
+    text-transform: uppercase;
+    color: #008ed6;
+    font-weight: 700; 
+    font-size: 14px;
+    word-spacing: 4px;   
+    letter-spacing: 2px;    
+    margin-bottom: 10px;
+}
+
+.tittle h2{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 36px;   
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 36px;
+}
+
+.tittle span{
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: auto;
+    position:relative;
+}
+
+.tittle span::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background: #008ed6;
+    transition:.5s all ease-in-out;
+}
+
+.tittle span::after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:0;
+    background: #008ed6;
+    transition:.5s all ease-in-out;
+}
+
+.feature-section:hover span::before, .feature-section:hover span::after{
+    width:48%;
+}
+
+.feature-section{
+    padding: 4% 0;
+}
+
+.item h2{
+   text-align: center;
+   color: #1a1a1a; 
+   font-weight: 500;  
+   font-size: 24px;    
+   text-transform: capitalize;  
+   margin: 4px;
+}
+.item p{   
+    text-align: center;
+    color: #999999;    
+    font-weight: 400;   
+    font-size: 18px;
+    padding: 14px;
+}
+.feature-section .icon-box{ 
+   text-align: center;
+   width: 90px;   
+   height: 90px;      
+   border: 1px solid #d3c8c8;
+   border-radius: 50%;  
+   line-height: 90px;
+   font-size: 26px;
+   margin: auto;
+   margin-bottom: 34px;
+   transition: all 0.5s ease-in-out;
+}
+.feature-section .icon-box:hover{
+    transform: rotate(180deg); 
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+
+}
